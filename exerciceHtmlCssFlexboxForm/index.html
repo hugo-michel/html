@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container0"><!-- flexbox général-->
+        <div class="container1"><!--flexbox text-->
+            <div class="box divRed">
+                <h1>je suis le bloc qui représente l'entête de la page</h1>
+            </div>
+            <div class="box divGreen">
+                <h1>je suis le bloc qui représente le contenu principal de la page</h1>
+            </div>
+            <div class="box divBlue">
+                <h1>je suis le bloc qui représente le pied de page</h1>
+            </div>
+        </div>
+
+        <div class="container2"><!--flexbox gallery image-->
+            <div class="gallery image1"><img src="mario.jpeg" alt="mario" width="220" height="300"></div>
+            <div class="gallery image2"><img src="toad.jpeg" alt="toad" width="220" height="300"></div>
+            <div class="gallery image3"><img src="yoshi.jpeg" alt="yoshi" width="220" height="300"></div>
+        </div>
+
+        <div class="container3">
+            <form id="form">
+                <h2>Formulaire d'inscription</h2>
+                <fieldset class="fieldset1">
+                    <legend>Informations personnelles</legend>
+                    <div class="info">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                    </div>
+                    <div class="info">
+                        <label for="email">Email :</label>
+                        <input type="text" id="email" name="email" placeholder="Entrez votre adresse mail" required>
+                    </div>
+                    <div class="info">
+                        <label for="password">Mot de passe :</label>
+                        <input type="text" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset2">
+                    <legend>Préférences</legend>
+                    <div class="newsletter">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">S'abonner à la newsletter</label>
+                    </div>
+                    <p>Couleur préférée :</p>
+                    <div class="colorOptions">
+                        <div class="color">
+                            <label for="red">Red</label>
+                            <input type="radio" id="red" name="color">
+                        </div>
+                        <div class="color">
+                            <label for="green">Green</label>
+                            <input type="radio" id="green" name="color">
+                        </div>
+                        <div class="color">
+                            <label for="blue">Blue</label>
+                            <input type="radio" id="blue" name="color">
+                        </div>
+                        <div class="color">
+                            <label for="yellow">Yellow</label>
+                            <input type="radio" id="yellow" name="color">
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </div>
+</body>
+</html>
